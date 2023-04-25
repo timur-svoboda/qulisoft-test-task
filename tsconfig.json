@@ -1,6 +1,23 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@qulisoft-test-task/feat-navigation": [
+        "libs/feat-navigation/src/index.ts"
+      ],
+      "@qulisoft-test-task/feat-gallery-screen": [
+        "libs/feat-gallery-screen/src/index.ts"
+      ],
+      "@qulisoft-test-task/feat-single-photo-screen": [
+        "libs/feat-single-photo-screen/src/index.ts"
+      ],
+      "@qulisoft-test-task/ui-message": ["libs/ui-message/src/index.ts"],
+      "@qulisoft-test-task/data-store": ["libs/data-store/src/index.ts"],
+      "@qulisoft-test-task/data-gallery-api": [
+        "libs/data-gallery-api/src/index.ts"
+      ]
+    }
   }
 }
